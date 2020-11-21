@@ -1,0 +1,19 @@
+<!--
+You will need one erb file which will display the guesses so far. 
+It will also display how good the guess was, as described above. 
+Finally it will prompt the user, 
+using an entry field and a submit button, for the next guess.
+-->
+
+<h1>Welcome to the guessing challenge!</h1>
+<p>You have 7 chances to guess the right number between 1-100!</p>
+
+<form>
+    <label for="guess">Guess a number:</label>
+    <input type="text" name="guess" id="guess">
+</form>
+
+<% grade = 97 %>
+<% if grade >60 %>
+    <p>You passed bro</p>
+<% end %>
